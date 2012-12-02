@@ -1,15 +1,13 @@
-%define		git_hash c730e12
 %define		pkg	ini
 Summary:	An INI parser/serializer for node.js
 Name:		nodejs-%{pkg}
-Version:	1.0.1
+Version:	1.0.5
 Release:	1
 License:	MIT
 Group:		Development/Libraries
 URL:		https://github.com/isaacs/ini
-# download from https://github.com/isaacs/ini/tarball/%{version}
-Source0:	isaacs-%{pkg}-%{version}-0-g%{git_hash}.tar.gz
-# Source0-md5:	07cb2acef7257f1431d5f0bd07365eee
+Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
+# Source0-md5:	cfa4642a4ee9b93b9618fff8652463fd
 #BuildRequires:  nodejs-tap
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
@@ -21,7 +19,7 @@ An INI file parser and serializer for node.js.
 
 %prep
 %setup -qc
-mv isaacs-%{pkg}-*/* .
+mv package/* .
 
 %install
 rm -rf $RPM_BUILD_ROOT
