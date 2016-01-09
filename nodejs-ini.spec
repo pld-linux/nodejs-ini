@@ -1,14 +1,13 @@
 %define		pkg	ini
 Summary:	An INI parser/serializer for node.js
 Name:		nodejs-%{pkg}
-Version:	1.1.0
+Version:	1.2.0
 Release:	1
 License:	MIT
 Group:		Development/Libraries
-URL:		https://github.com/isaacs/ini
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	33b455ac64eeea49593b5512c4ad7a4b
-#BuildRequires:  nodejs-tap
+# Source0-md5:	6e480ceb6d955cdafc99073d37ebf2f8
+URL:		https://github.com/isaacs/ini
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
 BuildArch:	noarch
