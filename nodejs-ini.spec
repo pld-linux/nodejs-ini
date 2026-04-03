@@ -2,7 +2,7 @@
 Summary:	An INI parser/serializer for node.js
 Name:		nodejs-%{pkg}
 Version:	1.2.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Libraries
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
